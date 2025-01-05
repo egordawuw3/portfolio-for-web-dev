@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивый сайт-портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">Портфолио</a>
+                <ul class="nav-links">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>Привет, я [Имя]</h1>
+                <p>Создаю современные и красивые веб-сайты.</p>
+                <a href="#portfolio" class="btn">Посмотреть работы</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/300x400" alt="Фото">
+                <div class="about-text">
+                    <h3>Немного о себе</h3>
+                    <p>Я веб-разработчик с опытом работы более 3 лет. Специализируюсь на создании современных, адаптивных и интерактивных веб-сайтов. Люблю решать сложные задачи и постоянно изучаю новые технологии.</p>
+                    <a href="#contact" class="btn">Связаться со мной</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git"></i>
+                    <h3>Git</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Проект 1">
+                    <div class="overlay">
+                        <h3>Проект 1</h3>
+                        <p>Описание проекта 1.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Проект 2">
+                    <div class="overlay">
+                        <h3>Проект 2</h3>
+                        <p>Описание проекта 2.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Проект 3">
+                    <div class="overlay">
+                        <h3>Проект 3</h3>
+                        <p>Описание проекта 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Портфолио. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
