@@ -1,11 +1,10 @@
-/* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: #f9f9f9;
 }
 
 .container {
@@ -14,19 +13,14 @@ body {
     max-width: 1200px;
 }
 
-/* Навигация */
 nav {
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
     padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav .logo {
-    color: #fff;
+    color: #333;
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
@@ -45,7 +39,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s;
@@ -55,216 +49,65 @@ nav .nav-links a:hover {
     color: #ff6f61;
 }
 
-/* Шапка */
 header {
-    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
-    color: #fff;
-    padding: 150px 0 100px;
+    background: #fff;
+    color: #333;
+    padding: 100px 0;
     text-align: center;
-    position: relative;
-}
-
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-header .hero {
-    position: relative;
-    z-index: 1;
 }
 
 header h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    animation: fadeInDown 1s ease-in-out;
 }
 
 header p {
     font-size: 1.2em;
     margin-bottom: 40px;
-    animation: fadeInUp 1s ease-in-out;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
-    background: #ff6f61;
+    padding: 10px 20px;
+    background: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s;
 }
 
 .btn:hover {
-    background: #e65a50;
-    transform: translateY(-5px);
+    background: #555;
 }
 
-/* Обо мне */
-.about {
+.about, .work, .contact {
     padding: 80px 0;
     background: #fff;
 }
 
-.about h2 {
+.about h2, .work h2, .contact h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    animation: fadeIn 1s ease-in-out;
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.about-content img {
-    border-radius: 10px;
-    width: 300px;
-    height: auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.about-text {
-    flex: 1;
-}
-
-.about-text h3 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* Навыки */
-.skills {
-    padding: 80px 0;
-    background: #f4f4f4;
-}
-
-.skills h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-}
-
-.skill-item {
-    text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skill-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.skill-item i {
-    font-size: 3em;
-    color: #ff6f61;
-    margin-bottom: 10px;
-}
-
-.skill-item h3 {
-    font-size: 1.2em;
-}
-
-/* Портфолио */
-.portfolio {
-    padding: 80px 0;
-    background: #fff;
-}
-
-.portfolio h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.portfolio-grid {
+.work-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.portfolio-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.portfolio-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-item img {
-    width: 100%;
-    display: block;
-    transition: transform 0.3s;
-}
-
-.portfolio-item:hover img {
-    transform: scale(1.1);
-}
-
-.portfolio-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.portfolio-item:hover .overlay {
-    opacity: 1;
-}
-
-/* Контакты */
-.contact {
-    padding: 80px 0;
+.work-item {
     background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.contact h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    animation: fadeIn 1s ease-in-out;
+.work-item img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .contact form {
@@ -276,15 +119,10 @@ header p {
 }
 
 .contact input, .contact textarea {
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
-    transition: border-color 0.3s;
-}
-
-.contact input:focus, .contact textarea:focus {
-    border-color: #ff6f61;
 }
 
 .contact textarea {
@@ -293,77 +131,27 @@ header p {
 }
 
 .contact button {
-    padding: 15px 30px;
-    background: #ff6f61;
+    padding: 10px 20px;
+    background: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s;
 }
 
 .contact button:hover {
-    background: #e65a50;
-    transform: translateY(-5px);
+    background: #555;
 }
 
-/* Подвал */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 1em;
-}
-
-footer .social-links {
-    margin-top: 20px;
-}
-
-footer .social-links a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1.5em;
-    transition: color 0.3s;
-}
-
-footer .social-links a:hover {
-    color: #ff6f61;
-}
-
-/* Анимации */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
